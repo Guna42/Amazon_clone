@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+/* Amazon Logo */
+.nav-logo img {
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Location */
+.nav-address {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-address i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: white;
+}
+
+.add-first {
+    color: #ccc;
+    font-size: 0.75rem;
+}
+
+.add-second {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    width: 500px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.search-icon {
+    background-color: #febd69;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-icon i {
+    font-size: 1.2rem;
+    color: #0f1111;
+}
+
+/* Account & Lists */
+.nav-account,
+.nav-orders {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.small-text {
+    font-size: 0.75rem;
+    color: #ccc;
+}
+
+.big-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Cart */
+.nav-cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-cart i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+/* Hover Effect */
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+/* Panel */
+.panel {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #222f3d;
+    color: white;
+    padding: 0 15px;
+}
+
+.panel-all {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.panel-options {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-options p {
+    display: inline;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    padding-left: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-search {
+        width: 100%; /* Adjusts width for small screens */
+    }
+
+    .panel-options {
+        display: none; /* Hide extra options on small screens */
+    }
+
+    .panel-deals {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.hero-section {
+    
+    background-image: url(hero.jpg);
+    height:350px;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.hero-msg{
+    background-color: #f3f3f3;
+    color:black;
+    height:40px;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    font-size:0.75rem;
+    width:80%;
+    margin-bottom:25px;
+
+
+
+
+}
+
+.hero-msg a{
+    color:#007185;
+}
+.shop-sect {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+    gap: 20px; /* Space between boxes */
+    background-color: #e2e7e6;
+    padding: 20px;
+}
+
+.box {
+    border: 2px solid white;
+    height: 300px;
+    background-color: white;
+    padding: 20px 15px;
+}
+
+.box-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.box-content {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.box-content a {
+    color: #007185;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box-content a:hover {
+    text-decoration: underline;
+}
+
+/* Update the heading style in your .box-content */
+.box-content h2 {
+    color: #333; /* Change this to your desired color */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 600; /* Bold text for emphasis */
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    background-color: #232f3e;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid #3a4553;
+}
+
+.footer-top div {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-top h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-top ul {
+    list-style-type: none;
+}
+
+.footer-top ul li {
+    margin-bottom: 8px;
+}
+
+.footer-top ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-top ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #131a22;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 5px;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+/* Your Details */
+.footer-bottom .user-info {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
